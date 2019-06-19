@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAlignment="gravity"
+        android:tooltipText="步数"
+        app:contentInsetStartWithNavigation="0dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="运动轨迹"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_40_transparent" />
+
+    <Button
+        android:id="@+id/water_drop_btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="水滴图"
+        android:layout_marginTop="30dp"
+        android:onClick="clickWaterDrop"/>
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="轨迹地图"
+        android:layout_marginTop="30dp"
+        android:onClick="clickGaoDeMap"/>
+
+
+    <Button
+        android:id="@+id/map_google"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Google"
+        android:layout_marginTop="30dp"
+        android:onClick="clickGoogleMap"/>
+
+</LinearLayout>
